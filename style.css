@@ -1,0 +1,63 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.todo-container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+.todo-container h1 {
+  margin-top: 0;
+  color: #ffbe0b; /* Yellow color for the heading */
+}
+.todo-input {
+  width: 93%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+}
+.add-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #8338ec; /* Purple color for the add button */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.add-btn:hover {
+  background-color: #3a86ff; /* Light blue color for the add button hover */
+}
+.todo-list {
+  list-style-type: none;
+  padding: 0;
+}
+.todo-list li {
+  background-color: #fbf8cc; /* Very light yellow background for list items */
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.todo-list li .delete-btn {
+  background-color: #ff006e; /* Red color for the delete button */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+.todo-list li .delete-btn:hover {
+  background-color: #fb5607; /* Orange color for the delete button hover */
+}
