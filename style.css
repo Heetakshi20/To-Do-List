@@ -1,63 +1,72 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f8ff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-}
-.todo-container {
-  background-color: #ffffff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 300px;
-}
-.todo-container h1 {
-  margin-top: 0;
-  color: #ffbe0b;
-}
-.todo-input {
-  width: 93%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #cccccc;
-  border-radius: 4px;
-}
-.add-btn {
-  width: 100%;
-  padding: 10px;
-  background-color: #8338ec; /* Purple color for the add button */
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-.add-btn:hover {
-  background-color: #3a86ff;
-}
-.todo-list {
-  list-style-type: none;
-  padding: 0;
-}
-.todo-list li {
-  background-color: #fbf8cc;
-  padding: 10px;
-  margin-bottom: 5px;
-  border-radius: 4px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.todo-list li .delete-btn {
-  background-color: #ff006e;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  padding: 5px 10px;
-}
-.todo-list li .delete-btn:hover {
-  background-color: #fb5607;
-}
+            font-family: georgia;
+            background-color: #f0f8ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .todo-container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+        .todo-container h1 {
+            margin-top: 0;
+            color: #ffbe0b;
+        }
+        .todo-input {
+            width: 378px;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+        }
+        .add-btn {
+          font-family: georgia;
+            width: 100%;
+            padding: 10px;
+            background-color: #8338ec;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .add-btn:hover {
+            background-color: #3a86ff;
+        }
+        .todo-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .todo-list li {
+            background-color: #fbf8cc;
+            padding: 10px;
+            margin-bottom: 5px;
+            border-radius: 4px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .todo-list li.completed {
+            text-decoration: line-through;
+            opacity: 0.6;
+        }
+        .todo-list li .edit-input {
+            width: 70%;
+            padding: 5px;
+        }
+        .todo-list li .edit-btn, .todo-list li .complete-btn, .todo-list li .delete-btn {
+            background-color: #ff006e;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            padding: 5px 10px;
+            margin-left: 5px;
+        }
+        .todo-list li .complete-btn:hover, .todo-list li .edit-btn:hover, .todo-list li .delete-btn:hover {
+            background-color: #fb5607; 
+        }
